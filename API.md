@@ -105,7 +105,7 @@ The endpoint for this API is `https://api2.overtrack.gg/owl/clips`. An example r
       "day": 2,
       "duration": 22,
       "game_name": "2019 Season | Stage 4 Week 3 Day 2 | Hangzhou Spark vs. New York Excelsior",
-      "hero": "PHARAH",
+      "hero": "pharah",
       "kill_count": 5,
       "opponent_team": "New York Excelsior",
       "player": "GODSB",
