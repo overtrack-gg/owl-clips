@@ -94,7 +94,7 @@ The endpoint for this API is `https://api2.overtrack.gg/owl/clips`. An example r
 
 ## Sample Call
 
-**`GET` request :** `https://api2.overtrack.gg/owl/clips?player=NERO&hero=BRIGITTE&min_kills=3`
+**`GET` request :** `https://api2.overtrack.gg/owl/clips?player=GODSB&hero=PHARAH&min_kills=4`
 
 **Response :**
 
@@ -103,34 +103,42 @@ The endpoint for this API is `https://api2.overtrack.gg/owl/clips`. An example r
   "clips": [
     {
       "day": 2,
-      "duration": 20,
-      "game_name": "2019 Season | Stage 4 Week 2 Day 2 | Guangzhou Charge vs. Hangzhou Spark",
-      "hero": "BRIGITTE",
-      "kill_count": 3,
-      "opponent_team": "Hangzhou Spark",
-      "player": "NERO",
+      "duration": 22,
+      "game_name": "2019 Season | Stage 4 Week 3 Day 2 | Hangzhou Spark vs. New York Excelsior",
+      "hero": "PHARAH",
+      "kill_count": 5,
+      "opponent_team": "New York Excelsior",
+      "player": "GODSB",
       "pov": true,
       "season": 2019,
       "stage": 4,
-      "team": "Guangzhou Charge",
-      "time": 3129595988.2812,
+      "team": "Hangzhou Spark",
+      "time": 3130800346.0144997,
       "type": "kills",
-      "url": "https://clips.twitch.tv/BloodyModernParrotSmoocherZ",
+      "url": "https://clips.twitch.tv/SpookyHonestShrimpRlyTho",
       "victims": [
         {
-          "hero": "doomfist",
-          "name": "ADORA"
+          "hero": "sombra",
+          "name": "LIBERO"
         },
         {
-          "hero": "ana",
-          "name": "BEBE"
+          "hero": "moira",
+          "name": "JJONAK"
         },
         {
-          "hero": "brigitte",
-          "name": "IDK"
+          "hero": "dva",
+          "name": "MEKO"
+        },
+        {
+          "hero": "reaper",
+          "name": "NENNE"
+        },
+        {
+          "hero": "hammond",
+          "name": "MANO"
         }
       ],
-      "week": 2
+      "week": 3
     }
   ]
 }
