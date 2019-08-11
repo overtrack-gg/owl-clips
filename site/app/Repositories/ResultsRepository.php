@@ -24,4 +24,13 @@ class ResultsRepository extends BaseRepository implements ResultsRepositoryInter
 
         return $data;
     }
+
+    public function getResultsForHero(string $hero): array
+    {
+        $req = $this->buildRequest('hero=' . $hero);
+        $res = $this->guzzle->send($req);
+        $data = json_decode($res->getBody()->getContents(), true);
+
+        return $data;
+    }
 }

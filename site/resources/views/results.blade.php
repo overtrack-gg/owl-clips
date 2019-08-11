@@ -66,11 +66,11 @@
     <body>
         <div class="flex-center position-ref full-height">
             <div class="content">
-                <h1>Clips for {{ $player }} - {{ count($clips['clips']) }}</h1>
+                <h1>Clips for {{ $resultsFor }} - {{ count($clips['clips']) }}</h1>
                 @if (count($clips['clips']) > 1)
                     @foreach ($clips['clips'] as $clip)
                         <div class="clip">
-                            <a href="{{ $clip['url'] }}">{{ $clip['game_name'] }} as {{ $clip['hero'] }}</a>
+                            <a href="{{ $clip['url'] }}">{{ $clip['game_name'] }} as {{ $clip['hero'] }} by {{ $clip['player'] }}</a>
                         </div>
                     @endforeach
                 @endif

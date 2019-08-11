@@ -17,9 +17,23 @@ class ResultsController extends Controller
     public function listByPlayer($player) 
     {
         $clips = $this->resultsRepository->getResultsForPlayer($player);
-        return view('results', [
+        return view(
+            'results',
+            [
                 'clips' => $clips,
-                'player' => $player,
+                'resultsFor' => $player,
+            ]
+        );
+    }
+
+    public function listByHero($hero)
+    {
+        $clips = $this->resultsRepository->getResultsForHero($hero);
+        return view(
+            'results',
+            [
+                'clips' => $clips,
+                'resultsFor' => $hero,
             ]
         );
     }

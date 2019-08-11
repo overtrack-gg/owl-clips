@@ -9,3 +9,4 @@ Route::get('/', function () {
 });
 
 Route::get('/results/player/{player}', 'ResultsController@listByPlayer');
+Route::get('/results/hero/{hero}', 'ResultsController@ListByHero');
