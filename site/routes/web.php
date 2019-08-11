@@ -10,3 +10,4 @@ Route::get('/', function () {
 
 Route::get('/results/player/{player}', 'ResultsController@listByPlayer');
 Route::get('/results/hero/{hero}', 'ResultsController@ListByHero');
+Route::get('/results/team/{team}', 'ResultsController@ListByTeam');

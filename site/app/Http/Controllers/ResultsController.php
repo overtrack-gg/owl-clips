@@ -20,7 +20,7 @@ class ResultsController extends Controller
         return view(
             'results',
             [
-                'clips' => $clips,
+                'clips' => $clips['clips'],
                 'resultsFor' => $player,
             ]
         );
@@ -32,8 +32,20 @@ class ResultsController extends Controller
         return view(
             'results',
             [
-                'clips' => $clips,
+                'clips' => $clips['clips'],
                 'resultsFor' => $hero,
+            ]
+        );
+    }
+
+    public function listByTeam($team)
+    {
+        $clips = $this->resultsRepository->getResultsForTeam($team);
+        return view(
+            'results',
+            [
+                'clips' => $clips['clips'],
+                'resultsFor' => $team,
             ]
         );
     }
