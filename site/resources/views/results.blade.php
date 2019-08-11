@@ -68,9 +68,9 @@
             <div class="content">
                 <h1>Clips for {{ $player }} - {{ count($clips['clips']) }}</h1>
                 @if (count($clips['clips']) > 1)
-                    @foreach ($clips as $clip)
+                    @foreach ($clips['clips'] as $clip)
                         <div class="clip">
-                            <a href="{{ $clip[0]['url'] }}">{{ $clip[0]['game_name'] }}</a>
+                            <a href="{{ $clip['url'] }}">{{ $clip['game_name'] }} as {{ $clip['hero'] }}</a>
                         </div>
                     @endforeach
                 @endif
