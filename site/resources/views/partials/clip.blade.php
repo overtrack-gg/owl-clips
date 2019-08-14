@@ -1,7 +1,7 @@
 <div class="clip card text-dark">
     <div class="card-header">
         <div class="card-title">
-            <p class="h4">{{ $clip['game_name'] }} - {{ $clip['player'] }} - {{ $clip['hero'] }}</p>
+            <a href="{{ $clip['url']}}" class="h4 text-dark">{{ $clip['game_name'] }} - {{ $clip['player'] }} - {{ $clip['hero'] }}</a>
         </div>
     </div>
     <div class="card-body">
